@@ -56,7 +56,7 @@ class Main
         // Range handling here
 
         String output = values.get(0);
-        for (int i = 0; i < values.size(); i++) {
+        for (int i = 0; i < values.size() - 1; i++) {
             if (values.get(i).equals(values.get(i+1) + 1)) {
                 output += "-";
             } else {
