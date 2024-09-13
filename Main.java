@@ -56,12 +56,13 @@ class Main
         // Range handling here
 
         String output = values.get(0);
-        for (int i = 0; i < values.size() - 1; i++) {
-            int value1 = Integer.parseInt(values.get(i));
-            int value2 = Integer.parseInt(values.get(i+1));
+        for (int i = 1; i < values.size(); i++) {
+            int value1 = Integer.parseInt(values.get(i-1));
+            int value2 = Integer.parseInt(values.get(i));
 
             if (value1 == value2 + 1) {
                 output += "-";
+                System.out.println("value1: " + value1 + " value2: " + value2);
             } else {
                 output += values.get(i) + ", ";
             }
