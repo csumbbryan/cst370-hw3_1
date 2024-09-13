@@ -56,16 +56,25 @@ class Main
         // Range handling here
 
         String output = values.get(0) + ", ";
-        for (int i = 1; i < values.size(); i++) {
+        for (int i = 1; i < values.size() - 1; i++) {
             int value1 = Integer.parseInt(values.get(i-1));
             int value2 = Integer.parseInt(values.get(i));
+            int value3 = Integer.parseInt(values.get(i+1));
             System.out.println("value1: " + value1 + " value2: " + value2);
-            if (value1 == value2 - 1) {
-                output += "-";
+            if (value1 + 1 == value2 && value2 + 1 == value3) {
+                continue;
+            } else if (value1 + 1 == value2 && value2 + 1 != value3) {
+                output += values.get(i) + ", ";
+            } else if (value1 + 1 != value2 && value2 + 1 == value3) {
+                output += values.get(i) + "-";
             } else {
                 output += values.get(i) + ", ";
             }
         }
+
+        //If n-1 is greater than 1 more than n, then add n to the output
+        //If n-1 is 1 less than n, and n+1 is 1 more than n, then do nothing
+        //If n-1 is 1 less than n, and n+1 is greater than 1 more than n, then add n to the output
 
 
         System.out.println(values);
