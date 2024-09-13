@@ -55,7 +55,12 @@ class Main
 
         // Range handling here
 
-        String output = values.get(0) + ", ";
+        String output = values.get(0);
+        if(values.get(0).equals(values.get(1))) {
+            output += ", ";
+        } else {
+            output += "-";
+        }
         for (int i = 1; i < values.size() - 1; i++) {
             int value1 = Integer.parseInt(values.get(i-1));
             int value2 = Integer.parseInt(values.get(i));
