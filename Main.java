@@ -60,7 +60,7 @@ class Main
             int value1 = Integer.parseInt(values.get(i-1));
             int value2 = Integer.parseInt(values.get(i));
             System.out.println("value1: " + value1 + " value2: " + value2);
-            if (value1 == value2 + 1) {
+            if (value1 == value2 - 1) {
                 output += "-";
             } else {
                 output += values.get(i) + ", ";
