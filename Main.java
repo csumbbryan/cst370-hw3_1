@@ -13,15 +13,29 @@
  * Name: Write your name
  * Date: MM/DD/YYYY
  */
- 
-class Main 
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+class Main
 {
     public static void main(String[] args) {
 
         // Develop your program here.
         // The following is just a sample statement and and you need to replace it with your code
-        
-        System.out.println("Hello world!");
+        List<String> values = new ArrayList<String>();
+
+        Scanner scanner = new Scanner(System.in);
+        while (scanner.hasNextLine()) {
+            String s1 = scanner.nextLine();
+            if(!values.contains(s1)) {
+                values.add(s1);
+            }
+        }
+        scanner.close();
+
+        System.out.println(values);
     }
 }
 
