@@ -71,7 +71,7 @@ class Main
                 output += values.get(i) + ", ";
             }
         }
-        output += values.get(values.size());
+        output += values.get(values.size() - 1);
 
         //If n-1 is greater than 1 more than n, then add n to the output
         //If n-1 is 1 less than n, and n+1 is 1 more than n, then do nothing
