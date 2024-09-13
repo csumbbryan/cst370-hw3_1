@@ -53,7 +53,20 @@ class Main
 
         values = sort(values);
 
+        // Range handling here
+
+        String output = values.get(0);
+        for (int i = 0; i < values.size(); i++) {
+            if (values.get(i).equals(values.get(i+1) + 1)) {
+                output += "-";
+            } else {
+                output += values.get(i) + ", ";
+            }
+        }
+
+
         System.out.println(values);
+        System.out.println(output);
     }
 }
 
