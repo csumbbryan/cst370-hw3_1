@@ -20,6 +20,22 @@ import java.util.Scanner;
 
 class Main
 {
+    public static List<String> sort(List<String> values) {
+        for (int i = 0; i < values.size()-1; i++) {
+            for (int k = i+1; k < values.size(); k++) {
+                if (i != k) {
+                    int value1 = Integer.parseInt(values.get(i));
+                    int value2 = Integer.parseInt(values.get(k));
+                    if (value1 > value2) {
+                        values.set(i, values.get(k));
+                        values.set(k, Integer.toString(value1));
+                    }
+                }
+            }
+        }
+        return values;
+    }
+
     public static void main(String[] args) {
 
         // Develop your program here.
@@ -34,6 +50,8 @@ class Main
             }
         }
         scanner.close();
+
+        values = sort(values);
 
         System.out.println(values);
     }
