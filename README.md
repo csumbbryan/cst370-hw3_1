@@ -1,3 +1,4 @@
+[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=15918091)
 # CST370-HW3_1_Java
 
 Write a Java program for hw3_1 that reads the number of input values from a user. Then, read the input values from the user. After that, your program should display them in the ascending order. When you display the numbers, you have to use a short representation if there are consecutive numbers. For example, if there are three numbers such as 51, 52, and 53 in the input values, you have to display them 51–53 to save space. For the assignment, you can assume that the input values are positive integers and unique (= No duplications in the input numbers).
