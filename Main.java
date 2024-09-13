@@ -9,9 +9,11 @@
 
 // Finish the head comment with Abstract, Name, and Date.
 /*
- * Abstract: Describe the main ideas of the program.
- * Name: Write your name
- * Date: MM/DD/YYYY
+ * Title: CST370-HW3_1_Java
+ * Abstract: Accepts input values from a user, and outputs the values in a sorted order, with ranges of values
+ * where numbers are sequential.
+ * Name: Bryan Zanoli
+ * Date: 09/13/2024
  */
 
 import java.util.ArrayList;
