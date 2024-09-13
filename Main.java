@@ -57,7 +57,10 @@ class Main
 
         String output = values.get(0);
         for (int i = 0; i < values.size() - 1; i++) {
-            if (values.get(i).equals(values.get(i+1) + 1)) {
+            int value1 = Integer.parseInt(values.get(i));
+            int value2 = Integer.parseInt(values.get(i+1));
+
+            if (value1 == value2 + 1) {
                 output += "-";
             } else {
                 output += values.get(i) + ", ";
