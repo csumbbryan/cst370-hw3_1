@@ -46,11 +46,13 @@ class Main
 
         Scanner scanner = new Scanner(System.in);
         String count = scanner.nextLine();
-        while (scanner.hasNextLine()) {
+        int j = 0;
+        while (j < Integer.parseInt(count)) {
             String s1 = scanner.nextLine();
             if(!values.contains(s1)) {
                 values.add(s1);
             }
+            j++;
         }
         scanner.close();
 
