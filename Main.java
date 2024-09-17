@@ -64,7 +64,7 @@ class Main
         if(Integer.parseInt(values.get(0)) == Integer.parseInt(values.get(1)) - 1) {
             output += "-";
         } else {
-            output += ", ";
+            output += " ";
         }
         for (int i = 1; i < values.size() - 1; i++) {
             int value1 = Integer.parseInt(values.get(i-1));
