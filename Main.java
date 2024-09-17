@@ -74,11 +74,11 @@ class Main
             if (value1 + 1 == value2 && value2 + 1 == value3) {
                 continue;
             } else if (value1 + 1 == value2 && value2 + 1 != value3) {
-                output += values.get(i) + ", ";
+                output += values.get(i) + " ";
             } else if (value1 + 1 != value2 && value2 + 1 == value3) {
                 output += values.get(i) + "-";
             } else {
-                output += values.get(i) + ", ";
+                output += values.get(i) + " ";
             }
         }
         output += values.get(values.size() - 1);
